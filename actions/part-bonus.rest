@@ -1,0 +1,33 @@
+# My Variables
+@contentType = application/json
+# @baseurl = http://localhost:5000/api
+@baseurl = http://your-backend/api
+
+### login
+POST {{baseurl}}/users/login
+Content-Type: {{contentType}}
+
+{
+    "email": "john@example.com",
+    "password": "123456"
+}
+
+### register
+POST {{baseurl}}/users
+Content-Type: {{contentType}}
+
+{
+    "email": "john5@example.com",
+    "password": "123456",
+    "name":"John5",
+    "isAdmin":true
+}
+
+
+### top products
+GET {{baseurl}}/products/top
+Content-Type: {{contentType}}
+
+### get product
+GET {{baseurl}}/products/638c6d74d00e2c0bf0dcf39f
+

@@ -1,0 +1,42 @@
+# My Variables
+@contentType = application/json
+@baseurl = http://localhost:3000/api
+
+### POST Request
+POST {{baseurl}}/post
+Content-Type: application/json
+
+{
+    "name":"Pekka",
+    "age":29
+}
+
+### GET Request
+GET {{baseurl}}/getAll
+Content-Type: {{contentType}
+
+### GET Request
+GET {{baseurl}}/getOne/638c559bb1d6e975c06dda8d
+Content-Type: {{contentType}
+
+
+### DELET Request
+DELETE {{baseurl}}/delete/638c54f7b1d6e975c06dda83
+Content-Type: application/json
+
+
+### PUT  Request
+PATCH {{baseurl}}/update/638c5567b1d6e975c06dda8a
+Content-Type: application/json
+
+{
+    "age": 35
+}
+
+### PUT  Request
+PATCH {{baseurl}}/update/638c5567b1d6e975c06dda8a
+Content-Type: application/json
+
+{
+    "name":"Matti"
+}
